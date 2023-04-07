@@ -226,12 +226,16 @@ transition: background-color var(--transat-act), border-color var(--transat-act)
   background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: #2e2f42;
+  align-items: center;
+    justify-content: center;
   }
 
 .close-button:hover {
   background-color: #404BBF;
   border-radius: 50%;
-  fill:#2e2f42;
+  fill:#FFFFFF;
+  align-items: center;
+    justify-content: center;
 }
 .close-button-icon{
 
