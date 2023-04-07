@@ -10,6 +10,7 @@
 	--color-navy-blue-modal: #2e2f42;
 	--color-grey: #2e2f42;
 	--color-white: #ffffff;
+  --transat-act: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,h2,h3,h4,h5,h6,p,section {
  margin: 0;
@@ -92,14 +93,11 @@ span.ingredient{
  letter-spacing: 0.02em;
  color: var(--color-grey); 
  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+padding-top: 24px;
+padding-bottom: 24px;
+transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-.header-link:hover{
- color: var(--color-ocean);
- 
-}
-.header-link:focus{
+.header-link:hover, .header-link:focus{
  color: var(--color-ocean);
 }
 .header-address{
@@ -119,13 +117,12 @@ span.ingredient{
  padding-top: 24px;
  padding-bottom: 24px;
  display: block;
+ transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-.contact-link:hover{
+.contact-link:hover, .contact-link:focus{
  color: var(--color-ocean);
 }
-.contact-link:focus{
- color: var(--color-ocean);
-}
+
   /**--------Section1------*/
 .section-one {
     background-color: var(--color-grey);
@@ -173,12 +170,9 @@ span.ingredient{
     min-width: 169px;
     height: 56px;
     border-color: transparent;
+    transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-  .btn:hover{
-  color: var(--color-white);
-  background-color: var(--color-ocean);
-  }
-  .btn:focus{
+  .btn:hover, .btn:focus{
   color: var(--color-white);
   background-color: var(--color-ocean);
   }
@@ -319,19 +313,12 @@ span.ingredient{
   justify-content: center;
   border-radius: 50%;
   background-color: #4D5AE5;
+  transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-.ourteam-soc-link:hover{
+.ourteam-soc-link:hover, .ourteam-soc-link:focus{
   background-color: #404BBF;;
 }
-.ourteam-soc-link:hover .ourteam-soc-item{
-  fill: green;
-}
-.ourteam-soc-link:focus{
-  background-color: #404BBF;;
-}
-.ourteam-soc-link:focus .ourteam-soc-item{
-  fill: green;
-}
+
 /*---Customers-----**/
 .customers {
   padding-top: 120px;
@@ -364,22 +351,11 @@ span.ingredient{
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-
   fill: #8E8F99;
+  transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-/*--.customers-item:hover {
-  border: 1px solid #404BBF;
-  fill: #404BBF;
- }
-.customers-item:focus {
-  border: 1px solid #404BBF;
-  fill: #404BBF;
-}--*/
-.customers-item-link:hover {
-  border: 1px solid #404BBF;
-  fill: #404BBF;
-}
-.customers-item-link:focus {
+
+.customers-item-link:hover, .customers-item-link:focus {
   border: 1px solid #404BBF;
   fill: #404BBF;
 }
@@ -457,18 +433,10 @@ margin-bottom: 16px;
   justify-content: center;
   border-radius: 50%;
   background-color: #4D5AE5;
+  transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-.footer-soc-link:hover{
+.footer-soc-link:hover, .footer-soc-link:focus{
   background-color: #31D0AA;
-}
-.footer-soc-link:hover .footer-soc-item{
-  fill: green;
-}
-.footer-soc-link:focus{
-  background-color: #31D0AA;
-}
-.footer-soc-link:focus .footer-soc-item{
-  fill: green;
 }
 .footer-soc-icon {
 }
@@ -501,9 +469,9 @@ border-radius: 4px;
 padding: 12px 24px;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
 .btnportfolio:hover, .btnportfolio:focus {
-/*--font-family: 'Roboto';  --*/
 background: var(--color-ocean);
 border-color: transparent;
 color: var(--color-white);
@@ -536,15 +504,11 @@ margin-bottom: 8px;
 }
 .service-item:{
 }
-.service-item:hover {
-}
 .service-item-link {
   display: block;
+  transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
 }
-.service-item-link:hover {
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.service-item-link:focus {
+.service-item-link:hover, .service-item-link:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .service-text {
