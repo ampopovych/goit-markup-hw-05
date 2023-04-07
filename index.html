@@ -34,7 +34,16 @@
         <section class="section-one">
             <div class="container container-sectone">
     <h1 class="section-one-title">Effective Solutions<br> for Your Business</h1>
-    <button type="button" class="btn">Order Service</button>
+    <button type="button" class="btn open-modal" data-modal-open>Order Service</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close><a href="" class="close-button-link link">
+            <svg width="8" height="8" class="close-button-icon">
+                <use href="./images/Vector.svg"></use>
+            </svg>
+    </a></button>
+        </div>
+      </div>
 </div>
         </section>
 <section class="about">
@@ -315,5 +324,6 @@
         </div>
     </div>    
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>

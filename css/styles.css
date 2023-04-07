@@ -182,11 +182,81 @@ transition: background-color var(--transat-act), border-color var(--transat-act)
     height: 56px;
     border-color: transparent;
     transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
-}
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .btn:hover, .btn:focus{
   color: var(--color-white);
   background-color: var(--color-ocean);
   }
+  
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(46, 47, 66, 0.4);;
+}
+
+.modal {
+  width: 408px;
+  height: 576px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-button {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  color: #2E2F42;;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button:hover {
+  background-color: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-button-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transat-act), border-color var(--transat-act), color var(--transat-act), box-shadow var(--transat-act);
+}
+.close-button-icon{
+
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
   /**--------Section2 About-------*/
   .about {
     padding-top: 120px;
