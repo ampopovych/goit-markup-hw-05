@@ -595,6 +595,7 @@ margin-bottom: 8px;
 
 .service-item-link:hover, .service-item-link:focus .overlay {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+transform: translatey(0);
 }
 
 .service-item-box {
@@ -617,11 +618,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .service-item-box:hover .overlay {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translatey(0);
 }
-.service-item-box:focus .overlay {
-  transform: translatey(0);
-}
+
 
 .overlay p {
 font-size: 16px;
