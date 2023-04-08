@@ -115,11 +115,10 @@ position: relative;
   background-color: var(--color-ocean);
   border-radius: 2px;
   position: absolute;
-  gap: 20px;
- }
+  bottom: 20px;
+}
  .header-menu-color {
- 
-  color: var(--color-ocean);
+ color: var(--color-ocean);
  }
  
 .header-address{
