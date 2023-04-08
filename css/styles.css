@@ -238,11 +238,9 @@ position: relative;
 .close-button:hover {
   background-color: #404BBF;
   border-radius: 50%;
-  fill:#FFFFFF;
+  fill: #FFFFFF;
 }
-.close-button-icon{
 
-}
 
 .is-hidden {
   opacity: 0;
